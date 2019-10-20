@@ -9,12 +9,23 @@ function App() {
     ]
   }
 
-  return (
-    <div className="todo-app container">
-      <h1 className = "h1.center.blue-text">Todo's</h1>
-      <Todos todos = {this.state.todos}>
-    </div>
-  );
+  deleteTodo = (id) => {
+    const todos = this.state.todos.filter (todo => {
+       return todo.id !== id
+    });
+    this.setState({
+      todos
+    })
+  }
+
+  render(){
+    return (
+      <div className="todo-app container">
+        <h1 className = "h1.center.blue-text">Todo's</h1>
+        <Todos todos = {this.state.todos} deleteTodo = {this.deleteTodo}/>
+      </div>
+    );
+  }
 }
 
 export default App;
