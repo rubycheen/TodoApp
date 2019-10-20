@@ -1,4 +1,5 @@
 import React from 'react';
+import Todos form './todos';
 
 function App() {
   state = {
@@ -9,8 +10,9 @@ function App() {
   }
 
   return (
-    <div className="App">
-  
+    <div className="todo-app container">
+      <h1 className = "h1.center.blue-text">Todo's</h1>
+      <Todos todos = {this.state.todos}>
     </div>
   );
 }
