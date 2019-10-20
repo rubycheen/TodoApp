@@ -1,5 +1,6 @@
 import React from 'react';
-import Todos form './todos';
+import Todos from './todos';
+import AddForm from './AddForm '
 
 function App() {
   state = {
@@ -18,11 +19,20 @@ function App() {
     })
   }
 
+  addTodo =(id) => {
+    todo.id = Math.random();
+    let todos = {...this.state.todos}
+    this.setState({
+      todos
+    })
+  }
+
   render(){
     return (
       <div className="todo-app container">
         <h1 className = "h1.center.blue-text">Todo's</h1>
         <Todos todos = {this.state.todos} deleteTodo = {this.deleteTodo}/>
+        <AddForm addTodo = {this.addTodo}/>
       </div>
     );
   }
