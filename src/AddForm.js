@@ -1,15 +1,15 @@
- import React, { Component } from 'react'
+import React, { Component } from 'react'
 
- class AddTodo extends Component{
-     state = {
-        content = ''
-     }
+class AddTodo extends Component{
+    state = {
+        content : '' //object中適用：
+    }
 
-     handleChange =(e) => {
+    handleChange =(e) => {
         this.state({
             content: e.target.value
         })
-     }
+    }
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -29,6 +29,6 @@
             </div>
         )
     }
- }
+}
 
- export default AddForm
+export default AddTodo

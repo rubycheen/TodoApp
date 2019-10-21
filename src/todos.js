@@ -6,13 +6,21 @@ const Todos = (todos, deleteTodo) => {
         todos.map(todo => {
             return(
                 <div className ="div.collection-item" key = {todo.id}>
-                    <span onClick={() => {deleteTodo(todo.id)}>{todo.content}</span>
+                    <span
+                        onClick = {
+                            () => {deleteTodo(todo.id)}
+                        }
+                    >    
+                        {todo.content}  
+                    </span>
                 </div>
-            )
-        }
-            )
+                )
+            }
+        )
     ) : (
-        <p className = "center">You have no todo's left, yeee </p>
+        <p className = "center">
+            You have no todo's left, yeee
+        </p>
     )
     return(
         <div className = "todos collection">
