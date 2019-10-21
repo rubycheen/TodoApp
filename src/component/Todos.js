@@ -19,4 +19,4 @@ const Todos = ({todos, deleteTodo}) => {
         </div>
     )
 }
-export default Todos;
+export default Todos
