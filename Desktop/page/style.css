@@ -78,8 +78,6 @@ div.AboutUs{
   background-color:rgba(255, 255, 255, 0.95);
   display: block;
   position: relative;
-  background-position-x: 320px;
-  background-position-y: 612px;
   text-align: center;
   width: 800px;
   height: 424px;
@@ -93,4 +91,9 @@ p.content{
   margin: 171px, 60px,60px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+div.title{
+  text-align:center;
+  color: #b761a2;
 }
