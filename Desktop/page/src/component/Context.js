@@ -1,11 +1,14 @@
 import React from 'react';
 
 
+const Context = ({content}) => {
 
-
-const Context = ({todos, deleteTodo}) => {
-
-
+    const context = Context
+    return (
+    <div className='contexts'>
+      {content}
+    </div>    
+    )
 }
 
 
@@ -20,4 +23,8 @@ const Context = ({todos, deleteTodo}) => {
 
 
 
-// export default Context;
+
+
+
+
+export default Context;

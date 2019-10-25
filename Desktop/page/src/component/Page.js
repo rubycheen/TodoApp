@@ -49,28 +49,20 @@ state = {
   render() {
     return (
       <>
-        <div className='titles'>
-          <p>{this.state.Title.whatIsProduct.content}</p>
-        </div>
-        <div className='contexts'>
-          <p>{this.state.Context.paragraph1.content}</p>
-          <p>{this.state.Context.paragraph2.content}</p>
-        </div>
+        <Title content={this.state.Title.whatIsProduct.content} />
+        <Context content={this.state.Context.paragraph1.content} />
+        <Context content={this.state.Context.paragraph2.content} />
         <br></br>
-        <div className='buttons'>
+
+        <div className='tabs'>
           <p>{this.state.Tab.crown.content}</p>
           <p>{this.state.Tab.veneer.content}</p>
         </div>
-        <div className='contexts'>
-          <p>{this.state.Context.paragraph3.content}</p>
-        </div>
+
+        <Context content={this.state.Context.paragraph3.content} />
         <br></br>
-        <div className='titles'>
-          <p>{this.state.Title.howToChoose.content}</p>
-        </div>
-        <div className='contexts'>
-          <p>{this.state.Context.paragraph4.content}</p>
-        </div>
+        <Title content={this.state.Title.howToChoose.content} />
+        <Context content={this.state.Context.paragraph4.content} />
       </>
     );
   };
